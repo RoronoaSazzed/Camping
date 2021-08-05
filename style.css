@@ -1,14 +1,17 @@
-.camp {
+/* .camp {
   max-width: 100%;
   position: relative;
+} */
+
+.parentDiv {
+  background-image: url(Campfire-img.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.animationParticle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.mobileCamp {
+  display: none;
 }
 
 /* Firefly Animation */
@@ -600,5 +603,16 @@
 
   100% {
     transform: scale(1.15);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .animationParticle {
+    display: none;
+  }
+
+  .mobileCamp {
+    display: block;
+    height: 100vh;
   }
 }
