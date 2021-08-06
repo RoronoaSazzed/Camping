@@ -28,8 +28,49 @@
         font-family: "Poppins", sans-serif;
       }
 
+      .parentDiv {
+        background-image: url(Campfire-img.png);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+
       .animationParticle {
         height: 100vh;
+      }
+
+      .mobileCamp {
+        display: none;
+        height: 100vh;
+      }
+
+      /* Tablet Portrait */
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .animationParticle {
+          width: 165%;
+          transform: translate(-20%, 10%);
+        }
+      }
+
+      /* Tablet Landscape */
+
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        .animationParticle {
+          width: 135%;
+          transform: translate(-13%, 0%);
+        }
+      }
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        .animationParticle {
+          display: none;
+        }
+        .mobileCamp {
+          display: block;
+        }
       }
     </style>
   </head>
@@ -659,7 +700,7 @@
             <g id="fireshadow">
               <path
                 id="Vector"
-                d="M248 1047.14C356.248 1047.14 444 1013.08 444 971.06C444 929.042 356.248 894.98 248 894.98C139.752 894.98 52 929.042 52 971.06C52 1013.08 139.752 1047.14 248 1047.14Z"
+                d="M968 1047.16C1076.25 1047.16 1164 1013.1 1164 971.08C1164 929.062 1076.25 895 968 895C859.752 895 772 929.062 772 971.08C772 1013.1 859.752 1047.16 968 1047.16Z"
                 fill="url(#paint0_radial)"
               />
             </g>
