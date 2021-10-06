@@ -8,12 +8,7 @@
   height: 100vh;
   display: grid;
   place-items: center;
-  background: rgb(29, 29, 67);
-  background: linear-gradient(
-    0deg,
-    rgba(29, 29, 67, 1) 0% 50%,
-    rgba(0, 0, 51, 1) 50% 100%
-  );
+  background: #000000;
 }
 
 #campfirePC {
@@ -784,26 +779,29 @@
   animation-delay: 3.9s;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .parentDiv {
-    overflow: hidden;
+/*@media (min-width: 1025px) and (max-width: 1280px) {
+    .parentDiv {
+      overflow: hidden;
+    }
+  
+    #campfirePC {
+      display: none;
+    }
+  
+    #campfireTabLandscape {
+      margin-top: -70px !important;
+      display: block;
+    }
   }
-
-  #campfirePC {
-    display: none;
-  }
-
-  #campfireTabLandscape {
-    margin-top: -70px !important;
-  }
-}
+  
+  */
 
 /* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .parentDiv {
     overflow: hidden;
   }
@@ -824,9 +822,9 @@
 }
 
 /* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .parentDiv {
@@ -859,7 +857,22 @@
 
   #campfireMobile {
     display: block;
-    max-height: 100%;
+    max-height: 100vh;
     width: auto;
+  }
+}
+
+/* add ----*/
+
+@media (min-width: 178vh) {
+  .parentDiv {
+    background: BLACK;
+  }
+}
+@media (max-width: 480px) and (orientation: portrait) {
+  #campfireMobile {
+    display: block;
+    max-height: 100vh;
+    width: 100%;
   }
 }
